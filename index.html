@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Computing project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    </head>
+    <body>
+<!-- Homepage - Header -->
+        <section class="header">
+            <nav>
+                <a href="index.html"></a></a>
+                <div class="nav_links" id="navLinks">
+                    <i class="fa fa-bars" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="social_engineering.html">SOCIAL ENGINEERING</a></li>
+                        <li><a href="malware.html">MALWARE</a></li>
+                        <li><a href="defence_mechanisms.html">DEFENCE MECHANISMS</a></li>
+                        <li><a onclick="scrollWin()">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text_box">
+                <h1>COMPUTING PROJECT</h1>
+                <p>Click below to learn more about social engineering and how to prevent falling for it</p>
+                <a href="social_engineering.html" class="hero_btn">Click here to start</a>
+            </div>
+        </section>
+
+<!--Bibliography-->
+
+        <section class="bibliography">
+            <h1>Bibliography</h1>
+            <p><br><br>Awati, R. (2021). What is the ILOVEYOU virus and how do you protect against it? [online] SearchSecurity. Available at: https://www.techtarget.com/searchsecurity/definition/ILOVEYOU-virus [Accessed 17 Oct. 2023].<br><br>
+                Buxton, O. (2022). What Is Scareware? Detection, Prevention & Removal. [online] What Is Scareware? Detection, Prevention & Removal. Available at: https://www.avast.com/c-scareware [Accessed 17 Oct. 2023].<br><br>
+                BYJU'S (n.d.). What is Computer Virus? | Types of Computer Virus. [online] BYJUS. Available at: https://byjus.com/govt-exams/computer-virus/#:~:text=Spacefiller%20Virus%20%E2%80%93%20It%20is%20a [Accessed 17 Oct. 2023].<br><br>
+                Cisco (n.d.). What Is Malware? - Definition and Examples. [online] Cisco. Available at: https://www.cisco.com/site/us/en/products/security/what-is-malware.html#:~:text=Malware%2C%20short%20for%20malicious%20software [Accessed 3 Oct. 2023].<br><br>
+                Crowdstrike (2023). What is Zeus Trojan Malware? - CrowdStrike. [online] crowdstrike.com. Available at: https://www.crowdstrike.com/cybersecurity-101/malware/trojan-zeus-malware/#:~:text=When%20the%20FBI%20cracked%20down [Accessed 16 Oct. 2023].<br><br>
+                Cybersecurity & Infrastructure Security Agency (2023). Virus Basics | CISA. [online] www.cisa.gov. Available at: https://www.cisa.gov/news-events/news/virus-basics [Accessed 4 Oct. 2023].<br>
+                Enzor, M. (2023). Recognizing Dangerous Computer Viruses | Geeks 2 You Computer Repair. [online] https://geeks2you.com/. Available at: https://geeks2you.com/10-dangerous-computer-viruses-and-how-to-recognize-them/#:~:text=Compared%20to%20other%20types%20of [Accessed 17 Oct. 2023].<br><br>
+                Fortinet (n.d.). Tailgating Attack: Examples and Prevention. [online] Fortinet. Available at: https://www.fortinet.com/resources/cyberglossary/tailgating-attack#:~:text=Tailgating%20is%20when%20someone%20tries [Accessed 16 Oct. 2023].<br><br>
+                Kaspersky (2018). Zeus Virus. [online] www.kaspersky.com. Available at: https://www.kaspersky.com/resource-center/threats/zeus-virus [Accessed 15 Oct. 2023].<br><br>
+                Latona, V. (2000). CIH: One Year Later. [online] ZDNet. Available at: https://www.zdnet.com/article/cih-one-year-later/ [Accessed 17 Oct. 2023].<br><br>
+                Office of the Victorian Information Commissioner (n.d.). Phishing Attacks and How to Protect Against Them. [online] Office of the Victorian Information Commissioner. Available at: https://ovic.vic.gov.au/privacy/resources-for-organisations/phishing-attacks-and-how-to-protect-against-them/ [Accessed 3 Oct. 2023].<br><br>
+                Rosario, M. (2023). What is the Chernobyl Virus? (with pictures). [online] EasyTechJunkie. Available at: https://www.easytechjunkie.com/what-is-the-chernobyl-virus.htm [Accessed 15 Oct. 2023].<br><br>
+                University, C.M. (2023). Social Engineering - Information Security Office - Computing Services - Carnegie Mellon University. [online] www.cmu.edu. Available at: https://www.cmu.edu/iso/aware/dont-take-the-bait/social-engineering.html#:~:text=Social%20engineering%20is%20the%20tactic [Accessed 3 Oct. 2023].</p>
+        </section>
+
+<!--Javascript-->
+
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-300px";
+            }
+
+            function scrollWin() {
+                window.scrollTo(0,3000);
+            }
+
+        </script>
+
+    </body>
+</html>
