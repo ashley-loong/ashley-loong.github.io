@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Social Engineering</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    </head>
+    <body>
+        <!-- Social engineering - Header -->
+        <section class="social_engineering_heading">
+            <nav>
+                <a href="index.html"></a></a>
+                <div class="nav_links" id="navLinks">
+                    <i class="fa fa-bars" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="social_engineering.html">SOCIAL ENGINEERING</a></li>
+                        <li><a href="malware.html">MALWARE</a></li>
+                        <li><a href="defence_mechanisms.html">DEFENCE MECHANISMS</a></li>
+                        <li><a href="bibliography.html">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="social_engineering_text_box">
+                <h1>SOCIAL ENGINEERING</h1>
+                <p>Social engineering is a tactic of manipulating, influencing or deceiving an individual in order to gain control<br>over a system or network orto steal personal and financial information from an individual.<br>(“Social engineering”, n.d.)</p>
+            </div>
+        </section>
+
+<!--Information--> 
+        <!--Social engineering tactics-->
+        <section class="social_engineering_info">
+            <h1>Social engineering tactics</h1>
+        <div class="social_engineering_row">
+            <div class="social_engineering_col" onclick="scrollWin_phishing()">
+            <h2>Phishing</h2>
+            <p>Phishing is a type of scam involving sending emails, phone calls, or an SMS to an unsuspecting individual disguised as a trusted sender in order to gain sensitive information. They are often designed to look genuine by imitating the format used by an organisation or individual they are masquerading as. </p>
+            </div>
+            <div class="social_engineering_col" onclick="scrollWin_scareware()">
+            <h2>Scareware</h2>
+            <p>Scareware is a form of malware that tricks users into downloading it. Once activated, the software exposes data, deletes files, steals funds, or performs some other harmful action. Often the text urges the user to act immediately causing them to click on it hastily. An example of this are pop-up messages which tell the user that their computer is compromised and urges them to purchase or download a software to repair it.</p>
+            </div>
+            <div class="social_engineering_col" onclick="scrollWin_tailgating()">
+            <h2>Tailgating</h2>
+            <p>Tailgating is a form of social engineering tactic which involves an unauthorised person gaining physical access to a restricted area. When they enter, they pretend as if they belong and blend in with the others in the building. </p>
+            </div>
+        </div>
+        </section>
+        <!--Social engineering tactics examples and analysis-->
+            <!--Phishing-->
+        <section class="social_engineering_tactics">
+            <h2>Phishing</h2>
+            <!--Example-->
+            <div class="phishing_info">
+                <ul>
+                    <p><b>Phishing email example</b></p>
+                    <li class="email_example">Say someone has received an email from the bank, and the email urges them to update their account. The email looks legitimate, using the bank's logo and branding, making it look like it was sent from the bank. The email encourages them to click on a link to update their account immediately to prevent unauthorised access.</li>
+           <!--Analysis-->
+                    <p><br><b>How to detect phishing emails</b></p>
+                    <li class="email_example"><b>Deceptive appearance: </b>Phishing emails often use a company's branding and logo to imitate them, creating a false sense of trust in the victim. To combat this, it is best to inspect the images used in the email closely, if the image is low quality, it is likely that the email is fake.</li>
+                    <li><b>Urgency: </b>Phishing emails often employ urgency and fear tactics to prompt quick action from the user.</li>
+                    <li><b>Unsolicited email: </b>Phishing emails often arrive unexpectedly or unsolicited. Legitimate companies do not request sensitive information through emails unless they had contacted the individual prior.</li>
+                    <li><b>Hover over links: </b>By using a cursor to hover over the link, the user is able to determine if the website is legitimate.</li>
+                </ul>             
+                <img src="Images/Comm Bank scam.png" alt="phishinggggg">
+            </div>
+            <!--Conclusion-->
+                <p class="phishing_conclusion"><br><br><em>Emails are the most common form of phishing tactic, but there are also other forms of phishing such as SMS phishing and whaling.<br><br><br><br><br><br></em></p>
+        </section>
+
+            <!--Scareware-->
+            <section class="social_engineering_scareware">
+                <img src="Images/scareware-1.jpg" alt="com bankkk">
+                <!--Example-->
+                <div class="scareware_info">
+                    <h2>Scareware</h2>
+                    <ul>
+                        <p><b>Scareware example</b></p>
+                        <li class="email_example">Say a user is browsing the internet, and a pop up window suddenly appears. It informs them that their computer is infected with a virus and if no action is taken, all their personal data such as passwords and financial information is at risk of being lost. The pop up then urges them to complete a scan of their computer to remove the virus.</li>
+               <!--Analysis-->
+                        <p><br><b>How to identify scareware</b></p>
+                        <li class="email_example"><b>Multitude of notifications: </b>First warning sign is the barrage of notifications appear, the text on it will be accompanied with exclamation marks and written in all caps. This is usually a good indication that the pop ups are fake. (Buxton, 2022)</li>
+                        <li><b>Unauthentic:</b> Genuine anti-virus softwares or operating systems will not employ alarming pop ups without prior user interaction.</li>
+                    </ul>             
+                </div>
+            </section>
+            <!--Conclusion-->
+            <p class="virus_conclusion"><br><br><br><em>boo 👻</em></p><br><br><br><br><br>
+
+            <!--Tailgating-->
+            <section class="social_engineering_tactics">
+                <h2>Tailgating</h2>
+                <!--Example-->
+                <div class="tailgating_info">
+                    <ul>
+                        <p><b>Tailgating example</b></p>
+                        <li class="email_example">For example, the perpetrator would dress up and pose as a delivery person or vendor, then they would demand access to the building whilst bringing parcels, supplies or other items. (Fortinet, n.d)</li>
+               <!--Analysis-->
+                        <p><br><b>How to prevent tailgating</b></p>
+                        <li class="email_example"><b>Video surveillance: </b>Installing security cameras serves as a deterrent to crime and it also helps law enforcement with identifying the attacker</li>
+                        <li><b>Educate staff: </b>Creating awareness in the company will equip staff members with the knowledge necessary to prevent tailgating attacks. This can be done through simulating tailgating attacks as they help reinforce security awareness.</li>
+                        <li><b>Identification: </b>Using wearable identification for employees can make it easier to control who is allowed inside of the premises.</li>
+                    </ul>             
+                    <img src="Images/3892309-removebg-preview (1).png" alt="phishinggggg">
+                </div>
+                <!--Conclusion-->
+                    <p class="virus_conclusion" ><em>Don't let tailgaters into the premises you morons.<br><br><br><br><br></em></p>
+            </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-300px";
+            }
+
+            function scrollWin_phishing() {
+                window.scrollTo(0,1245);
+            }
+
+            function scrollWin_scareware() {
+                window.scrollTo(0,2000);
+            }
+
+            function scrollWin_tailgating() {
+                window.scrollTo(0,2800);
+            }
+
+        </script>
+
+    </body>
+</html>

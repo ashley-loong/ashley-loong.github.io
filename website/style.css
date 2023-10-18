@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
+/* homepage */
+
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(7,7,10,0.7),rgb(13,33,161,0.7)),url(images/background_image_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: default;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav_links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 4px 12px;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav_links ul li a{
+    color: white;
+    text-decoration: white;
+    cursor: pointer;
+}
+
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 141, 213);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+
+.text_box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text_box h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+
+.text_box p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+.hero_btn{
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}
+
+.hero_btn:hover{
+    background-color: rgb(0, 141, 213);
+    border: 2px solid rgb(0, 141, 213);
+    transition: 0.2s;
+}
+
+nav .fa{
+    display: none;
+}
+
+/* bibliography page */
+
+.bibliography{
+    color: rgb(7,7,10);
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 60px;
+}
+
+.bibliography h1{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+.bibliography p{
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 5%;
+}
+
+.bibby_heading{
+    background-image: linear-gradient(rgb(7,7,10,0.7),rgb(13,33,161,0.7)),url(images/29739\ 2.jpg);
+    min-height: 70vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    cursor: default;
+}
+
+.bibby_text_box{
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.bibby_text_box h1{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bibby_text_box p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*social engineering page*/
+
+.social_engineering_heading{
+    background-image: linear-gradient(rgb(7,7,10,0.7),rgb(13,33,161,0.7)),url(images/user-people-network-circuit-board-link-connection-technology.jpg);
+    min-height: 70vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    cursor: default;
+}
+
+.social_engineering_text_box{
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.social_engineering_text_box h1{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+.social_engineering_text_box p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.social_engineering_info{
+    color: rgb(7,7,10);
+    text-align: center;
+    margin-top: 7%;
+}
+
+.social_engineering_info h1{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+}
+
+.social_engineering_info h2{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+}
+
+.social_engineering_row p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.social_engineering_row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.social_engineering_col{
+    flex-basis: 31%;
+    background: rgb(245, 243, 243);
+    color: rgb(7,7,10);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 45px 45px;
+    box-sizing: border-box;
+}
+
+.social_engineering_col p{
+    margin-top: 3%;
+}
+
+.social_engineering_col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.email_example{
+    margin-top: 8px;
+}
+
+.social_engineering_tactics{
+    background-color: rgb(245, 243, 243);
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.social_engineering_tactics h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-left: 3.5%;
+    padding-top: 30px;
+    margin-bottom: 2%;
+}
+
+.phishing_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phishing_info ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.phishing_info img{
+    position: relative;
+    max-width: 40%;
+    height: 40%;
+    margin-top: 6%;
+    border: 4px solid rgb(7,7,10);
+    border-left: 2.5px solid rgb(7,7,10);
+}
+
+.phishing_analysis{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phishing_analysis ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.phishing_conclusion {
+    text-align: center;
+    margin-left: 7%; 
+}
+
+.social_engineering_scareware{
+    background-color: rgb(245, 243, 243);
+    padding: 5%;
+}
+
+/* malware page */
+
+.malware_heading{
+    background-image: linear-gradient(rgb(7,7,10,0.7),rgb(13,33,161,0.7)),url(images/abstract-binary-code-background.jpg);
+    min-height: 70vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    cursor: default;
+}
+
+    /* virus section */
+
+.virus_tactics{
+    background-color: rgb(245, 243, 243);
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.virus_tactics h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-left: 3.5%;
+    padding-top: 30px;
+    margin-bottom: 2%;
+}
+
+.virus_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.virus_info img{
+    height: 25%;
+    width: 35%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.virus_info ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.virus_analysis{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.virus_analysis ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.virus_conclusion{
+    text-align: center;
+    margin-left: 7%; 
+}
+
+/* trojan virus section */
+
+.trojan_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.trojan_info img{
+    width: 75%;
+    height: 75%;
+    margin-left: 7%;
+    margin-top: -5%;
+}
+
+.trojaninfo ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+    /* scareware section */
+
+.social_engineering_scareware{
+    background-color: white;
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_engineering_scareware img{
+    height: 35%;
+    width: 35%;
+    margin-top: 8%;
+    padding-left: 4%;
+}
+    
+.scareware_info h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-left: 4%;
+    padding-top: 30px;
+    margin-bottom: 2%;
+}
+
+.scareware_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-right: 5.5%;
+    display: block;
+    text-align: left;
+    width: 650px;
+}
+
+.scareware_info p{
+    margin-left: 8%;
+}
+
+.scareware_info ul li{
+    width: 650px;
+    margin-left: 1em;
+    margin-left: 5.5%;
+}
+
+.scareware_info img{
+    width: 10%;
+    height: 10%;
+    margin-right: 7%;
+    margin-top: -5%;
+}
+
+.scareware ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.testing_example{
+    margin-left: 10%;
+}
+
+    /* tailgating section */
+
+.tailgating_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.tailgating_info img{
+    width: 75%;
+    height: 75%;
+    margin-left: 7%;
+    margin-top: -5%;
+}
+
+.tailgating_info ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+/* trojan section */
+
+.trojan_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-left: 5.5%;
+    display: flex;
+    justify-content: space-between; 
+}
+    
+.trojan_info img{
+    width: 25%;
+    height: 25%;
+    margin-right: 8%;
+    margin-top: -5%;
+}
+    
+.trojan_info ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.trojan_conclusion{
+    text-align: center;
+    background-color: rgb(245, 243, 243);
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Worm section */
+
+.social_engineering_scareware{
+    background-color: white;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_engineering_scareware img{
+    height: 40%;
+    width: 40%;
+    margin-top: 8%;
+    padding-left: 4%;
+}
+    
+.scareware_info h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-left: 4%;
+    padding-top: 30px;
+    margin-bottom: 2%;
+}
+
+.scareware_info{
+    color: rgb(7,7,10);
+    font-family: 'Open Sans', sans-serif;
+    display: list-item;
+    margin-left: 1em;
+    margin-right: 5.5%;
+    display: block;
+    text-align: left;
+    width: 650px;
+}
+
+.scareware_info p{
+    margin-left: 8%;
+}
+
+.scareware_info ul li{
+    width: 650px;
+    margin-left: 14%;
+}
+
+.scareware_info img{
+    width: 10%;
+    height: 10%;
+    margin-right: 7%;
+    margin-top: -5%;
+}
+
+.scareware_info ul li{
+    margin-left: 6%;
+    width: 650px;
+}
+
+.virus_conclusion{
+    text-align: center;
+    padding-right: 5%;
+}
+
+    /* defence mechanisms page */
+
+.defence_mechanisms_section{
+    color: rgb(7,7,10);
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 9%;
+
+    cursor: default;
+}
+
+.defence_mechanisms_section h1{
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    line-height: 1.2;
+}
+
+.defence_mechanisms_row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.defence_mechanisms_row p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.defence_mechanisms_col{
+    flex-basis: 31%;
+    background: rgb(245, 243, 243);
+    color: rgb(7,7,10);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 45px 45px;
+    box-sizing: border-box;
+}
+
+.defence_mechanisms_col p{
+    margin-top: 3%;
+}
+
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.photo-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+
+.paragraph{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+    background: rgb(245, 243, 243);
+    color: rgb(7,7,10);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    /* accomodating to smaller screen sizes (yes i'm not too sure either why i'm doing this LOL */
+
+@media(max-width: 700px){
+    .text_box h1{
+        font-size: 35px;
+    }
+    .nav_links ul li{
+        display: block;
+        padding-top: 15px;
+    }
+    .nav_links{
+        position: absolute;
+        background: rgb(7,7,10,0.8);
+        height: 100vh;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        text-align: right;
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav_links{
+        padding: 20px;
+    }
+    .social_engineering_text_box h1{
+        font-size: 40px;
+        margin-top: 30%;
+    }
+
+    .social_engineering_text_box p{
+        width: 350px;
+        margin: auto;
+        font-size: 10px;
+    }
+
+    .social_engineering_info h1{
+        font-size: 25px;
+    }
+
+    .social_engineering_col h2{
+        font-size: 20px;
+    }
+
+    .social_engineering_row{
+        display: block;
+        margin-top: 6%;
+    }
+
+    .social_engineering_row p{
+        font-size: 12px;
+        margin-top: 4%;
+    }
+
+    .social_engineering_col{
+        padding: 50px;
+    }
+
+}

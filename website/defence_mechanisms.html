@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Defence mechanisms</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    </head>
+    <body>
+        <!-- Defence mechanisms - Header -->
+        <section class="social_engineering_heading">
+            <nav>
+                <a href="index.html"></a></a>
+                <div class="nav_links" id="navLinks">
+                    <i class="fa fa-bars" id="slayed" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="social_engineering.html">SOCIAL ENGINEERING</a></li>
+                        <li><a href="malware.html">MALWARE</a></li>
+                        <li><a href="defence_mechanisms.html">DEFENCE MECHANISMS</a></li>
+                        <li><a href="bibliography.html">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="social_engineering_text_box">
+                <h1>DEFENCE MECHANISMS</h1>
+                <p>Methods to protect oneself and others from cybercriminals and malware.</p>
+            </div>
+        </section>
+
+<!--Information--> 
+    <!--Defence mechanisms-->
+    <section class="defence_mechanisms_section">
+        <h1>Prevention techniques</h1>
+        <div class="container">
+                <div class="photo-gallery">
+                    <div class="column">
+                        <div class="row1">
+                        <div class="photo">
+                            <p class="paragraph">Be wary of fake links or attachments - do not open any suspicious attachments, links or forward the email to another device because they may contain malware</p>
+                        </div>
+                        </div>
+                        <div class="row2">
+                        <div class="photo">
+                            <p class="paragraph">Do not provide any personal or financial information to unverified sources even to someone familiar. If the email was sent by somebody familiar but it seems out of character or suspicious, contact the person by phone number or physically to confirm whether they had actually sent it</p>
+                        </div>
+                        </div>
+                        <div class="row3">
+                        <div class="photo">
+                            <p class="paragraph">Ensure to check settings regularly - by making sure that the system is up to date, it can protect itself from contracting malware</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="row1">
+                        <div class="photo">
+                            <p class="paragraph">Ensuring pop up blocker is on - this reduces the likelihood of falling for scareware</p>
+                        </div>
+                        </div>
+                        <div class="row2">
+                        <div class="photo">
+                            <p class="paragraph">Do not store login credentials on devices or word documents, it makes them easily accessible for anyone who manages to gain access to the device</p>
+                        </div>
+                        </div>
+                        <div class="row3">
+                        <div class="photo">
+                            <p class="paragraph">Complete a virus scan prior to opening any new programs or files that contain executable code</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo">
+                            <p class="paragraph">Make it a habit to back up data regularly, so in the event of a virus infection, valuable data files are not lost</p>
+                        </div>
+                        <div class="photo">
+                            <p class="paragraph">Viewing images in plain text - Although most malware are only activiated when the user opens the attachment or link, however if the victim's email client allows scripting it is possible to obtain a virus by opening the message. To protect the computer system, it is best to limit what HTML is avaialble in the email messages</p>
+                        </div>
+                        <div class="photo">
+                            <p class="paragraph">Install an antivirus software, make sure to update it and use it regularly to protect the user's system from contracting malware</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!--What to do if you've fallen victim to a cyberattack-->
+    <section class="defence_mechanisms_section">
+        <h1>What to if someone has fallen victim to a phishing scam</h1>
+        <div class="defence_mechanisms_row">
+        <div class="defence_mechanisms_col">
+                <p>If someone has fallen for a phishing scam, it is advised to disconnect the device from the internet immediately, as it will reduce the risk of the malware spreading to other devices on the network.</p>
+                </div>
+        <div class="defence_mechanisms_col">
+                <p>After disconnecting from the internet, start backing up files in external hard drives or a cloud storage service such as DropBox or Google Drive, this in case the data gets erased during the recovery process of the phishing attack. </p>
+                </div>
+                <div class="defence_mechanisms_col">
+                <p>Change login credentials immediately, if the victim has made login attempts into a fake website, go into the real website and change the account's name and password immediately. If they have tried to access your account through a fake website, the attackers will use the login information provided to access the victim's account.</p>
+                </div>
+                </div>
+                </section>
+
+<!--Javascript-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0"; 
+            }
+            function hideMenu(){
+                navLinks.style.right = "-300px";
+            }
+
+        </script>
+
+    </body>
+</html>
